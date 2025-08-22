@@ -1,16 +1,13 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const hamburger = document.querySelector('.hamburger');
-  const sidebar = document.querySelector('.sidebar');
+ const hamburger = document.getElementById('hamburger');
+    const sidebar = document.getElementById('sidebar');
 
-  hamburger.addEventListener('click', () => {
-    sidebar.classList.toggle('mobile-open');
-  });
-
-  // Opcional: fechar sidebar ao clicar em um link (melhora UX)
-  const navLinks = document.querySelectorAll('.nav-menu a');
-  navLinks.forEach(link => {
-    link.addEventListener('click', () => {
-      sidebar.classList.remove('mobile-open');
+    hamburger.addEventListener('click', () => {
+      sidebar.classList.toggle('mobile-open');
     });
-  });
-});
+
+    // Fecha menu ao clicar em algum link
+    document.querySelectorAll('.nav-menu a').forEach(link => {
+      link.addEventListener('click', () => {
+        sidebar.classList.remove('mobile-open');
+      });
+    });

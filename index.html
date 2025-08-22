@@ -25,6 +25,7 @@
         <li><a href="#projetos">Projetos</a></li>
         <li><a href="#tecnologias">Tecnologias</a></li>
         <li><a href="#contato">Contato</a></li>
+      
       </ul>
     </nav>
   </aside>
@@ -56,10 +57,11 @@
 
     <!-- PROJETOS -->
     <section id="projetos" class="projetos">
-      <h2>Projetos</h2>
+      <h2 class="title-project">Projetos</h2>
+      <br>
 
       <div class="projeto">
-        <img src="images/Captura de tela 2025-08-19 221659.jpg" alt="Imagem do projeto Cardápio Online" class="img-projeto">
+        <img src="images/CardapioProject.jpg" alt="Imagem do projeto Cardápio Online" class="img-projeto">
         <h3>Cardápio Online</h3>
         <p>Um sistema para restaurantes exibirem seus menus de forma interativa.</p>
         <a href="https://github.com/ANTONIO33c/Cardapio-Online" target="_blank">GitHub</a>
@@ -67,10 +69,10 @@
       </div>
 
       <div class="projeto">
-        <img src="images/chuleta-quente.png" alt="Imagem do projeto Chuleta Quente" class="img-projeto">
+        <img src="images/ChuletaQuenteProject.png" alt="Imagem do projeto Chuleta Quente" class="img-projeto">
         <h3>Chuleta Quente - Churrascaria</h3>
         <p>Site institucional com cardápio e reservas online.</p>
-        <a href="https://github.com/seuusuario/seuprojeto" target="_blank">GitHub</a>
+        <a href="https://github.com/ANTONIO33c/Project-Full-Stack-PHP" target="_blank">GitHub</a>
         <a href="https://link-do-projeto.com" target="_blank">Ver Online</a>
       </div>
     </section>
@@ -101,21 +103,7 @@
 
   </main>
 
-  <script>
-    const hamburger = document.getElementById('hamburger');
-    const sidebar = document.getElementById('sidebar');
 
-    hamburger.addEventListener('click', () => {
-      sidebar.classList.toggle('mobile-open');
-    });
-
-    // Fecha menu ao clicar em algum link
-    document.querySelectorAll('.nav-menu a').forEach(link => {
-      link.addEventListener('click', () => {
-        sidebar.classList.remove('mobile-open');
-      });
-    });
-  </script>
-
+<script src="js/script.js"></script>
 </body>
 </html>
