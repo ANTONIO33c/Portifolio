@@ -31,6 +31,8 @@ body {
   transition: color 0.3s;
 }
 
+
+
 .hamburger:hover {
   color: #1f6feb;
 }
@@ -298,27 +300,28 @@ footer {
     width: 100%;
   }
 
-  /* Esconde o título e foto da sidebar para mobile */
-  .sidebar h2,
-  .profile-pic {
-    display: none;
-  }
+ 
 
   /* Menu horizontal é substituído por menu vertical na sidebar */
+
   .nav-menu ul {
+
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding-left: 20px;
+    padding-left: 30px;
+  
   }
+    
 
   .nav-menu li {
-    margin: 15px 0;
+    margin: 6px 0;
   }
+    
 
   .nav-menu a {
     font-size: 1.1rem;
-    padding: 10px 0;
+  
     display: block;
   }
 
